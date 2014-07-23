@@ -93,7 +93,7 @@ Value of strTime:
 ----> "21:32:43"
 
 Value of strTime2:
-----> "11:32 p"
+----> "11.32 p"
 ```
 
 ## GetFormattedDateTime(tDate, strFormat, strLangCode)
