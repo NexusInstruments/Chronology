@@ -23,7 +23,7 @@ The library currently supports localization of Month and Day of Week names. The 
 | "es" | Español (Spanish|
 
 **Notes**
-* Default language user is English ("en") if no language code is passed or the default language is not changed
+* The library will default to English ("en") if either no language code is passed or the default language is not changed
 
 ## Formatting
 Elements of the formatting strings are used to produce strings that are in a desired format.
