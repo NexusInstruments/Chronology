@@ -8,6 +8,7 @@ Usage
 =====
 ## Localization
 The library currently supports localization of Month and Day of Week names. The following languages are supported:
+
 | Language Code | Description |
 | ------------- | ----------- |
 | "en" | English |
@@ -17,6 +18,7 @@ The library currently supports localization of Month and Day of Week names. The 
 
 ## Formatting
 Elements of the formatting strings are used to produce strings that are in a desired format.
+
 | Format Code | Description |
 | ----------- | ----------- |
 | "{YYYY}" | 4 Digit Year (e.g "2014") |
