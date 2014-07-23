@@ -2,8 +2,6 @@ TimeUtils
 =========
 A Wildstar LUA library to format localized date and objects
 
-This can be very helpful when needing to export or save data inside the add-on data storage/settings. Or useful when you want to transport encoded data between add-ons or between clients through the use of in-game comm-channels.
-
 Usage
 =====
 ## Localization
