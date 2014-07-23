@@ -4,6 +4,14 @@ A Wildstar LUA library to format localized date and time objects
 
 Usage
 =====
+## Including the Library 
+```lua
+  local TimeUtils
+  TimeUtils = Apollo.GetPackage("Time:Utils-1.0").tPackage
+
+  TimeUtils:GetFormattedDate(GameLib.GetLocalTime())
+```
+
 ## Localization
 The library currently supports localization of Month and Day of Week names. The following languages are supported:
 
@@ -40,13 +48,6 @@ Elements of the formatting strings are used to produce strings that are in a des
 | "{TT}" | Full Meridian Designator | ("AM"/"PM") |
 | "{T}" | Short Meridian Designator | ("a"/"p") |
 
-## Including the Library 
-```lua
-  local TimeUtils
-  TimeUtils = Apollo.GetPackage("Time:Utils-1.0").tPackage
-
-  TimeUtils:GetFormattedDate(GameLib.GetLocalTime())
-```
 
 Reference
 ---------
