@@ -1,6 +1,6 @@
 TimeUtils
 =========
-A Wildstar LUA library to format localized date and objects
+A Wildstar LUA library to format localized date and time objects
 
 Usage
 =====
