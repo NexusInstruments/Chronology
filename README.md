@@ -9,7 +9,7 @@ Usage
 ## Localization
 The library currently supports localization of Month and Day of Week names. The following languages are supported:
 | Language Code | Description |
-|---------------|-------------|
+| ------------- | ----------- |
 |"en"|English|
 |"fr"|Français (French)|
 |"de"|Deutsch (German)|
@@ -18,7 +18,7 @@ The library currently supports localization of Month and Day of Week names. The 
 ## Formatting
 Elements of the formatting strings are used to produce strings that are in a desired format.
 | Format Code | Description |
-|-------------|-------------|
+| ----------- | ----------- |
 |"{YYYY}"| 4 Digit Year (e.g "2014") |
 |"{YY}"| 2 Digit Year (e.g. "14") |
 |"{MMMM}"| Localized Month Name (e.g. "January", "Mayo", "Avril") |
@@ -51,7 +51,8 @@ Elements of the formatting strings are used to produce strings that are in a des
 Reference
 ---------
 ## GetFormattedDate(tDate, strFormat, strLangCode)
-|-------|-----------|
+| Param | Description |
+| ----- | ----------- |
 | tDate | A Wildstar (GameLib) date table object |
 | strFormat | A format string to use to format the data |
 | strLangCode | A language code string to use |
@@ -71,7 +72,8 @@ Value of strDate:
 ```
 
 ## GetFormattedTime(tDate, strFormat, strLangCode)
-|-------|-----------|
+| Param | Description |
+| ----- | ----------- |
 | tDate | A Wildstar (GameLib) date table object |
 | strFormat | A format string to use to format the data |
 | strLangCode | A language code string to use |
@@ -95,7 +97,8 @@ Value of strTime2:
 ```
 
 ## GetFormattedDateTime(tDate, strFormat, strLangCode)
-|-------|-----------|
+| Param | Description |
+| ----- | ----------- |
 | tDate | A Wildstar (GameLib) date table object |
 | strFormat | A format string to use to format the data |
 | strLangCode | A language code string to use |
