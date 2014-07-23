@@ -18,9 +18,9 @@ The library currently supports localization of Month and Day of Week names. The 
 | Language Code | Description |
 | ------------- | ----------- |
 | "en" | English |
-| "fr" | Français (French|
-| "de" | Deutsch (German|
-| "es" | Español (Spanish|
+| "fr" | Français (French) |
+| "de" | Deutsch (German) |
+| "es" | Español (Spanish) |
 
 **Notes**
 * The library will default to English ("en") if either no language code is passed or the default language is not changed
