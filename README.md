@@ -22,6 +22,9 @@ The library currently supports localization of Month and Day of Week names. The 
 | "de" | Deutsch (German|
 | "es" | Español (Spanish|
 
+**Notes**
+* Default language user is English ("en") if no language code is passed or the default language is not changed
+
 ## Formatting
 Elements of the formatting strings are used to produce strings that are in a desired format.
 
@@ -60,7 +63,6 @@ Reference
 
 **Notes**
 * Default format used for date strings if no format is passed is "{YYYY}-{MM}-{DD}"
-* Default language user is English ("en") if no language code is passed
 
 **Example**
 ```lua
@@ -81,7 +83,6 @@ Value of strDate:
 
 **Notes**
 * Default format used for date strings if no format is passed is "{HH}:{mm}:{SS}"
-* Default language user is English ("en") if no language code is passed
 
 **Example**
 ```lua
@@ -106,7 +107,6 @@ Value of strTime2:
 
 **Notes**
 * Default format used for date strings if no format is passed is "{HH}:{mm}:{SS}"
-* Default language user is English ("en") if no language code is passed
 
 **Example**
 ```lua
@@ -121,6 +121,10 @@ Value of strDateTime:
 Value of strDateTime2:
 ----> "Martes 23 Julio 2014 21:32"
 ```
+## SetDefaultLanguage(strLangCode)
+| Param | Description |
+| ----- | ----------- |
+| strLangCode | Language code string of default language to use |
 
 ## GetMonthString(month, bAbbrv, strLangCode)
 | Param | Description |
@@ -129,15 +133,9 @@ Value of strDateTime2:
 | bAbbrv | Abbreviated value (true/false|
 | strLangCode | A language code string to use |
 
-**Notes**
-* Default language user is English ("en") if no language code is passed
-
 ## GetDayOfWeekString(day, bAbbrv, strLangCode)
 | Param | Description |
 | ----- | ----------- |
 | day | Integer for the day of the week (1 - 7|
 | bAbbrv | Abbreviated value (true/false|
 | strLangCode | A language code string to use |
-
-**Notes**
-* Default language user is English ("en") if no language code is passed
