@@ -6,10 +6,10 @@ Usage
 =====
 ## Including the Library 
 ```lua
-  local TimeUtils
-  TimeUtils = Apollo.GetPackage("Time:Utils-1.0").tPackage
+  local Chronology
+  Chronology = Apollo.GetPackage("Chronology-1.0").tPackage
 
-  TimeUtils:GetFormattedDate(GameLib.GetLocalTime())
+  Chronology:GetFormattedDate(GameLib.GetLocalTime())
 ```
 
 ## Localization
@@ -18,35 +18,35 @@ The library currently supports localization of Month and Day of Week names. The 
 | Language Code | Description |
 | ------------- | ----------- |
 | "en" | English |
-| "fr" | Français (French) |
-| "de" | Deutsch (German) |
-| "es" | Español (Spanish) |
+| "fr" | Français (French|
+| "de" | Deutsch (German|
+| "es" | Español (Spanish|
 
 ## Formatting
 Elements of the formatting strings are used to produce strings that are in a desired format.
 
 | Format Code | Description | Example |
 | ----------- | ----------- | ------- |
-| "{YYYY}" | 4 Digit Year | (e.g "2014") |
-| "{YY}" | 2 Digit Year | (e.g. "14") |
-| "{MMMM}" | Localized Month Name | (e.g. "January", "Mayo", "Avril") |
-| "{MMM}" | Localized Abbreviated Month Name | (e.g. "Jan.", "May", "Avr.") |
-| "{MM}" | 2 Digit Month; zero-padded | (e.g. "01") |
-| "{M}" | Month; not-padded | (e.g. "1") |
-| "{DDDD}" | Localized Day of Week | (e.g. "Miercoles", "Friday", "Sonntag") |
-| "{DDD}" | Localized Abbreviated Day of Week | (e.g. "Mi", "Fri", "So") |
-| "{DD}" | 2 Digit Date; zero-padded | (e.g. "04", "30") |
-| "{D}" | Date digit; not-padded | (e.g. "1") |
-| "{HH}" | 2 Digit Hour (24h); zero-padded | (e.g. "01", "23") |
-| "{H}" | Hour digit (24h); not-padded | (e.g. "1", "23") |
-| "{hh}" | 2 Digit Hour (12h); zero-padded | (e.g. "01", "11") |
-| "{h}" |  Hour digit (12h); not-padded | (e.g. "1", "11") |
-| "{mm}" | 2 Digit Minute; zero-padded | (e.g. "01", "43") |
-| "{m}" | Minute digit; not-padded | (e.g. "9", "14") |
-| "{SS}" | 2 Digit Seconds; zero-padded | (e.g. "09", "43") |
-| "{S}" | Seconds digit; not-padded | (e.g. "9", "14") |
-| "{TT}" | Full Meridian Designator | ("AM"/"PM") |
-| "{T}" | Short Meridian Designator | ("a"/"p") |
+| "{YYYY}" | 4 Digit Year | "2014" |
+| "{YY}" | 2 Digit Year | "14" |
+| "{MMMM}" | Localized Month Name | "January", "Mayo", "Avril" |
+| "{MMM}" | Localized Abbreviated Month Name | "Jan.", "May", "Avr." |
+| "{MM}" | 2 Digit Month; zero-padded | "01" |
+| "{M}" | Month; not-padded | "1" |
+| "{DDDD}" | Localized Day of Week | "Miercoles", "Friday", "Sonntag" |
+| "{DDD}" | Localized Abbreviated Day of Week | "Mi", "Fri", "So" |
+| "{DD}" | 2 Digit Date; zero-padded | "04", "30" |
+| "{D}" | Date digit; not-padded | "1" |
+| "{HH}" | 2 Digit Hour (24h); zero-padded | "01", "23" |
+| "{H}" | Hour digit (24h); not-padded | "1", "23" |
+| "{hh}" | 2 Digit Hour (12h); zero-padded | "01", "11" |
+| "{h}" |  Hour digit (12h); not-padded | "1", "11" |
+| "{mm}" | 2 Digit Minute; zero-padded | "01", "43" |
+| "{m}" | Minute digit; not-padded | "9", "14" |
+| "{SS}" | 2 Digit Seconds; zero-padded | "09", "43" |
+| "{S}" | Seconds digit; not-padded | "9", "14" |
+| "{TT}" | Full Meridian Designator | "AM"/"PM" |
+| "{T}" | Short Meridian Designator | "a"/"p" |
 
 
 Reference
@@ -64,7 +64,7 @@ Reference
 
 **Example**
 ```lua
-  local strDate = TimeUtils:GetFormattedDate(GameLib.GetLocalTime())
+  local strDate = Chronology:GetFormattedDate(GameLib.GetLocalTime())
 ```
 **Results**
 ```
@@ -85,8 +85,8 @@ Value of strDate:
 
 **Example**
 ```lua
-  local strTime = TimeUtils:GetFormattedTime(GameLib.GetLocalTime())
-  local strTime2 = TimeUtils:GetFormattedTime(GameLib.GetLocalTime(),"{hh}.{mm} {T}")
+  local strTime = Chronology:GetFormattedTime(GameLib.GetLocalTime())
+  local strTime2 = Chronology:GetFormattedTime(GameLib.GetLocalTime(),"{hh}.{mm} {T}")
 ```
 **Results**
 ```
@@ -110,8 +110,8 @@ Value of strTime2:
 
 **Example**
 ```lua
-  local strDateTime = TimeUtils:GetFormattedTime(GameLib.GetLocalTime())
-  local strDateTime2 = TimeUtils:GetFormattedTime(GameLib.GetLocalTime(),"{DDDD} {D} {MMMM} {YYYY} {HH}:{mm}", "es")
+  local strDateTime = Chronology:GetFormattedTime(GameLib.GetLocalTime())
+  local strDateTime2 = Chronology:GetFormattedTime(GameLib.GetLocalTime(),"{DDDD} {D} {MMMM} {YYYY} {HH}:{mm}", "es")
 ```
 **Results**
 ```
@@ -125,8 +125,8 @@ Value of strDateTime2:
 ## GetMonthString(month, bAbbrv, strLangCode)
 | Param | Description |
 | ----- | ----------- |
-| month | Integer for the month (1 - 12) |
-| bAbbrv | Abbreviated value (true/false) |
+| month | Integer for the month (1 - 12|
+| bAbbrv | Abbreviated value (true/false|
 | strLangCode | A language code string to use |
 
 **Notes**
@@ -135,8 +135,8 @@ Value of strDateTime2:
 ## GetDayOfWeekString(day, bAbbrv, strLangCode)
 | Param | Description |
 | ----- | ----------- |
-| day | Integer for the day of the week (1 - 7) |
-| bAbbrv | Abbreviated value (true/false) |
+| day | Integer for the day of the week (1 - 7|
+| bAbbrv | Abbreviated value (true/false|
 | strLangCode | A language code string to use |
 
 **Notes**
