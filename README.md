@@ -1,6 +1,6 @@
 Chronology
 ==========
-A Wildstar LUA library to format localized date and time objects
+A Wildstar LUA library to format date and time objects as localized strings.
 
 Usage
 =====
