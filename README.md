@@ -129,13 +129,13 @@ Value of strDateTime2:
 ## GetMonthString(month, bAbbrv, strLangCode)
 | Param | Description |
 | ----- | ----------- |
-| month | Integer for the month (1 - 12|
-| bAbbrv | Abbreviated value (true/false|
+| month | Integer for the month (1 - 12) |
+| bAbbrv | Abbreviated value (true/false) |
 | strLangCode | A language code string to use |
 
 ## GetDayOfWeekString(day, bAbbrv, strLangCode)
 | Param | Description |
 | ----- | ----------- |
-| day | Integer for the day of the week (1 - 7|
-| bAbbrv | Abbreviated value (true/false|
+| day | Integer for the day of the week (1 - 7) |
+| bAbbrv | Abbreviated value (true/false) |
 | strLangCode | A language code string to use |
