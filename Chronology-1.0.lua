@@ -1,11 +1,26 @@
-local C_MAJOR, C_MINOR = "Chronology-1.0", 1
+local C_MAJOR, C_MINOR = "Chronology-1.0", 2
 local C_Pkg = Apollo.GetPackage(C_MAJOR)
-if C_Pkg and (C_Pkg.nVersion or 0) >= MINOR then
+if C_Pkg and (C_Pkg.nVersion or 0) >= C_MINOR then
 	return -- no upgrade needed
 end
 
 -- Set a reference to the actual package or create an empty table
 local Chronology = C_Pkg and C_Pkg.tPackage or {}
+
+local ktMonthNumDays = {
+	[1] = 31,
+	[2] = 28,
+	[3] = 31,
+	[4] = 30,
+	[5] = 31,
+	[6] = 30,
+	[7] = 31,
+	[8] = 31,
+	[9] = 30
+	[10] = 31,
+	[11] = 30,
+	[12] = 31
+}
 
 local ktMonths = {
 	["en"] = {
@@ -126,6 +141,25 @@ end
 
 function Chronology:SetDefaultLanguage(lang)
 	Chronology.defaultLanguage = lang
+end
+
+function Chronology:GetDaysInMonth(month, year)
+	local d = ktMonthNumDays[month]
+  
+	-- check for leap year
+	if (month == 2) then
+		if (math.mod(year,4) == 0) then
+			if (math.mod(year,100) == 0)then                
+				if (math.mod(year,400) == 0) then                    
+					d = 29
+				end
+			else                
+				d = 29
+			end
+		end
+	end
+
+	return d  
 end
 
 function Chronology:GetMonthString(month, bAbbrv, lang)
