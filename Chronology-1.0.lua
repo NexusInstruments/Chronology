@@ -16,7 +16,7 @@ local ktMonthNumDays = {
 	[6] = 30,
 	[7] = 31,
 	[8] = 31,
-	[9] = 30
+	[9] = 30,
 	[10] = 31,
 	[11] = 30,
 	[12] = 31
@@ -83,40 +83,40 @@ local ktMonths = {
 
 local ktDaysOfWeek = {
 	["en"] = {
-		[1] = {full = "Monday", abbrv = "Mon."},
-		[2] = {full = "Tuesday", abbrv = "Tue."},
-		[3] = {full = "Wednesday", abbrv = "Wed."},
-		[4] = {full = "Thursday", abbrv = "Thu."},
-		[5] = {full = "Friday", abbrv = "Fri."},
-		[6] = {full = "Saturday", abbrv = "Sat."},
-		[7] = {full = "Sunday", abbrv = "Sun."}
+		[1] = {full = "Sunday", abbrv = "Sun."},
+		[2] = {full = "Monday", abbrv = "Mon."},
+		[3] = {full = "Tuesday", abbrv = "Tue."},
+		[4] = {full = "Wednesday", abbrv = "Wed."},
+		[5] = {full = "Thursday", abbrv = "Thu."},
+		[6] = {full = "Friday", abbrv = "Fri."},
+		[7] = {full = "Saturday", abbrv = "Sat."}
 	},
 	["fr"] = {
-		[1] = {full = "Lundi", abbrv = "Lun."},
-		[2] = {full = "Mardi", abbrv = "Mar."},
-		[3] = {full = "Mercredi", abbrv = "Mer."},
-		[4] = {full = "Jeudi", abbrv = "Jeu."},
-		[5] = {full = "Vendredi", abbrv = "Ven."},
-		[6] = {full = "Samedi", abbrv = "Sam."},
-		[7] = {full = "Dimanche", abbrv = "Dim."}
+		[1] = {full = "Dimanche", abbrv = "Dim."},
+		[2] = {full = "Lundi", abbrv = "Lun."},
+		[3] = {full = "Mardi", abbrv = "Mar."},
+		[4] = {full = "Mercredi", abbrv = "Mer."},
+		[5] = {full = "Jeudi", abbrv = "Jeu."},
+		[6] = {full = "Vendredi", abbrv = "Ven."},
+		[7] = {full = "Samedi", abbrv = "Sam."}
 	},
 	["es"] = {
-		[1] = {full = "Lunes", abbrv = "Lu"},
-		[2] = {full = "Martes", abbrv = "Ma"},
-		[3] = {full = "Miércoles", abbrv = "Mi"},
-		[4] = {full = "Jueves", abbrv = "Ju"},
-		[5] = {full = "Viernes", abbrv = "Vi"},
-		[6] = {full = "Sábado", abbrv = "Sa"},
-		[7] = {full = "Domingo", abbrv = "Do"}
+		[1] = {full = "Domingo", abbrv = "Do"},
+		[2] = {full = "Lunes", abbrv = "Lu"},
+		[3] = {full = "Martes", abbrv = "Ma"},
+		[4] = {full = "Miércoles", abbrv = "Mi"},
+		[5] = {full = "Jueves", abbrv = "Ju"},
+		[6] = {full = "Viernes", abbrv = "Vi"},
+		[7] = {full = "Sábado", abbrv = "Sa"}
 	},
 	["de"] = {
-		[1] = {full = "Montag", abbrv = "Mo"},
-		[2] = {full = "Dienstag", abbrv = "Di"},
-		[3] = {full = "Mittwoch", abbrv = "Mi"},
-		[4] = {full = "Donnerstag", abbrv = "Do"},
-		[5] = {full = "Freitag", abbrv = "Fr"},
-		[6] = {full = "Samstag", abbrv = "Sa"},
-		[7] = {full = "Sonntag", abbrv = "So"}
+		[1] = {full = "Sonntag", abbrv = "So"},
+		[2] = {full = "Montag", abbrv = "Mo"},
+		[3] = {full = "Dienstag", abbrv = "Di"},
+		[4] = {full = "Mittwoch", abbrv = "Mi"},
+		[5] = {full = "Donnerstag", abbrv = "Do"},
+		[6] = {full = "Freitag", abbrv = "Fr"},
+		[7] = {full = "Samstag", abbrv = "Sa"}
 	}
 }
 
